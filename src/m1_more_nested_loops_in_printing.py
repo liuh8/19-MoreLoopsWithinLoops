@@ -75,6 +75,14 @@ def triangle_right_justified(r):
     #   defeat the goal of providing practice at loops within loops.
     # -------------------------------------------------------------------------
 
+    # for k in range(r):
+    #     for j in range(r - k):
+    #         print('*', end='')
+    #     for j in range(k + 1):
+    #         print(r - j, end='')
+    #     print()
+
+
     for j in range(r):
         for k in range(r - j -1):
             print(' ', end='')
