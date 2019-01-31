@@ -246,7 +246,7 @@ def numbers_constant_forward(r, maxnum, n):
     Preconditions:  r, maxnum and n are positive integers.
     """
     # -------------------------------------------------------------------------
-    # TODO: 5. Implement and test this function.
+    # done: 5. Implement and test this function.
     #          Some tests are already written for you (above).
     #
     # HINT: What loop structure do you need for this problem?
@@ -256,6 +256,13 @@ def numbers_constant_forward(r, maxnum, n):
     #   in this or the other problems in this module, as doing so would
     #   defeat the goal of providing practice at loops within loops.
     # -------------------------------------------------------------------------
+    for k in range(r):
+        print()
+        for m in range(maxnum):
+            print(' ', end='')
+            for d in range(n):
+                print(str(m + 1), end='')
+    print()
 
 
 def run_test_numbers_constant_backwards():
@@ -290,7 +297,7 @@ def numbers_constant_backwards(r, maxnum, n):
     Preconditions:  r, maxnum and n are positive integers.
     """
     # -------------------------------------------------------------------------
-    # TODO: 6. Implement and test this function.
+    # done: 6. Implement and test this function.
     #          Some tests are already written for you (above).
     #
     # IMPLEMENTATION RESTRICTION:
@@ -298,6 +305,13 @@ def numbers_constant_backwards(r, maxnum, n):
     #   in this or the other problems in this module, as doing so would
     #   defeat the goal of providing practice at loops within loops.
     # -------------------------------------------------------------------------
+    for k in range(r):
+        print()
+        for m in range(maxnum, 0, -1):
+            print(' ', end='')
+            for d in range(n):
+                print(str(m), end='')
+    print()
 
 
 def run_test_numbers_increasing_forward():
@@ -342,7 +356,7 @@ def numbers_increasing_forward(r, maxnum):
     Preconditions:  r and maxnum are positive integers.
     """
     # -------------------------------------------------------------------------
-    # TODO: 7. Implement and test this function.
+    # done: 7. Implement and test this function.
     #          Some tests are already written for you (above).
     #
     # IMPLEMENTATION RESTRICTION:
@@ -350,7 +364,13 @@ def numbers_increasing_forward(r, maxnum):
     #   in this or the other problems in this module, as doing so would
     #   defeat the goal of providing practice at loops within loops.
     # -------------------------------------------------------------------------
-
+    for k in range(r):
+        print()
+        for m in range(maxnum):
+            print(' ', end='')
+            for d in range(m + 1):
+                print(str(m + 1), end='')
+    print()
 
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
